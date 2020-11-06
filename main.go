@@ -86,7 +86,7 @@ func (s *HTTP2Socks) ServeHTTP(rw http.ResponseWriter, r *http.Request) {
 
 var (
 	help      = flag.Bool("help", false, "show this help")
-	addr      = flag.String("addr", "127.0.0.1:1081", "address listen to")
+	addr      = flag.String("addr", "0.0.0.0:1081", "address listen to")
 	sockAddr  = flag.String("socks_addr", "127.0.0.1:1080", "socks server addr")
 	sockProto = flag.String("socks_proto", "socks5", "socks protocol type, [socks5|socks4|socks4a]")
 )
